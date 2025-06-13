@@ -1,0 +1,74 @@
+site_name: Gravfu.com
+site_url: https://gravfu.com
+copyright: Copyright &copy; 2025 Gravfu.com
+site_description: Gravfu.com is a blog about the Grav CMS, its plugins, themes, and development.
+
+edit_uri: edit/main/docs/
+repo_name: Github
+repo_url: https://github.com/umberd/gravfu.com/
+
+# nav:
+#   - Bienvenue: index.md
+#   - Blog: blog/index.md
+
+theme:
+  name: material
+  font:
+    text: Roboto
+    code: Roboto Mono
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/link
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: purple
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
+  icon:
+    edit: material/pencil 
+    view: material/eye
+    repo: fontawesome/brands/github
+  features:
+    - navigation.path
+    - navigation.tabs
+    - navigation.sections
+    - navigation.footer
+    - content.action.edit
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
+    - content.tabs.link
+    - navigation.indexes
+    - search.share
+    - search.highlight
+    - search.suggest
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+plugins:
+  - search
+  - blog
+  - social
