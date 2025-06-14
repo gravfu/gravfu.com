@@ -1,7 +1,8 @@
 site_name: Gravfu.com
 site_url: https://gravfu.com
 copyright: Copyright &copy; 2025 Gravfu.com
-site_description: Gravfu.com is a blog about the Grav CMS, its plugins, themes, and development.
+site_description: Gravfu.com is a blog about web development, programming, and technology.
+site_author: Gravfu
 
 edit_uri: edit/main/docs/
 repo_name: Github
@@ -13,6 +14,8 @@ repo_url: https://github.com/gravfu/gravfu.com/
 
 theme:
   name: material
+  logo: assets/logo.png
+  favicon: assets/logo.png
   font:
     text: Roboto
     code: Roboto Mono
@@ -49,10 +52,17 @@ theme:
     - content.code.select
     - content.code.annotate
     - content.tabs.link
-    - navigation.indexes
+    #- navigation.indexes
     - search.share
     - search.highlight
     - search.suggest
+    - toc.integrate
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/gravfu
+  generator: false
 
 markdown_extensions:
   - toc:
@@ -77,4 +87,3 @@ plugins:
   - git-committers:
       repository: gravfu/gravfu.com
       branch: main
-      # token: !ENV ["GITHUB_TOKEN"]
