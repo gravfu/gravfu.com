@@ -5,7 +5,7 @@ site_description: Gravfu.com is a blog about the Grav CMS, its plugins, themes, 
 
 edit_uri: edit/main/docs/
 repo_name: Github
-repo_url: https://github.com/umberd/gravfu.com/
+repo_url: https://github.com/gravfu/gravfu.com/
 
 # nav:
 #   - Bienvenue: index.md
@@ -72,3 +72,8 @@ plugins:
   - search
   - blog
   - social
+  - git-revision-date-localized:
+      enable_creation_date: true
+  - git-committers:
+      repository: gravfu/gravfu.com
+      branch: main
