@@ -77,3 +77,4 @@ plugins:
   - git-committers:
       repository: gravfu/gravfu.com
       branch: main
+      token: !ENV ["GITHUB_TOKEN"]
