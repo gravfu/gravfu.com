@@ -1,16 +1,34 @@
 site_name: Gravfu.com
 site_url: https://gravfu.com
 copyright: Copyright &copy; 2025 Gravfu.com
-site_description: Gravfu.com is a blog about web development, programming, and technology.
+site_description: Blog et tuto sur l'administration système, le développement et les bonnes pratiques.
 site_author: Gravfu
 
 edit_uri: edit/main/docs/
 repo_name: Github
 repo_url: https://github.com/gravfu/gravfu.com/
 
-# nav:
-#   - Bienvenue: index.md
-#   - Blog: blog/index.md
+nav:
+  - Accueil: index.md
+  - Blog:
+      - Accueil: blog/index.md
+      - Posts: blog/posts/
+  - SysAdmin:
+      - Bonnes pratiques: SysAdmin/bonnes_pratiques.md
+      - Déploiement:
+          - Docker:
+              - Build: SysAdmin/deploiement/docker/build.md
+      - Raid:
+          - Changement de disque: SysAdmin/raid/changement_disque.md
+  - Archives:
+      - Script backup basic: old/script_backup_basic.md
+      - Counter Strike:
+          - Accueil: old/Counter Strike/index.md
+          - Dev: old/Counter Strike/dev.md
+          - Observateur: old/Counter Strike/Observateur.md
+          - Optimisation serveur: old/Counter Strike/server-optimization.md
+  - A propos de moi: a_propos.md
+
 
 theme:
   name: material
