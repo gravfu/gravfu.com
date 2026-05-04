@@ -5,10 +5,6 @@ categories:
   - Activisme Trans
 ---
 
-Voici ton texte avec les corrections intégrées, prêt à être copié-collé.
-
-***
-
 # L'instrumentalisation de la science dans les soins d'affirmation de genre : Biais, erreurs et fraudes méthodologiques
 
 Dans le débat public concernant l'accès aux soins d'affirmation de genre, il est fréquent de voir des détracteurs brandir des études scientifiques pour affirmer que les transitions médicales sont inefficaces, voire dangereuses. Cependant, une lecture superficielle des données mène souvent à des conclusions trompeuses. 
